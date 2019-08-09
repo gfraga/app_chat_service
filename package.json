@@ -1,0 +1,24 @@
+{
+  "name": "app_chat_service",
+  "version": "1.0.0",
+  "description": "App Chat Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfraga/app_chat_service.git"
+  },
+  "author": "Gustavo Fraga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gfraga/app_chat_service/issues"
+  },
+  "homepage": "https://github.com/gfraga/app_chat_service#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "socket.io": "^2.2.0"
+  }
+}
