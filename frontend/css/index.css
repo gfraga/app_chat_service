@@ -1,0 +1,33 @@
+div.container {
+    height: auto;
+    overflow: hidden;
+    background: #757575;
+}
+
+div.right {
+    width: 85%;
+    height: 100%;
+    float: right;
+}
+
+div.left {
+    float: left;
+    width: 15%;
+    height: 100%;
+    overflow: hidden;
+}
+
+div.chat {
+    height: 500px;
+    overflow: hidden;
+    background: #dcf767;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+}
+
+label.nickname {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dcf767;
+    font-size: 22px;
+}
