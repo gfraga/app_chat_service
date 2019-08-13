@@ -19,6 +19,10 @@ No diretório *./frontend/* arquivo *index.html* foi criada a interface básica 
   - Executar o comando **npm start**.
   - Acessar via Browser o caminho **http://localhost:3030**.
   - Informar o usuário para entrar no Chat.
-  - Várias instâncias do Chat podem ser simuladas utilizando váris abas do Browser.
+  - Várias instâncias do Chat podem ser simuladas utilizando várias abas do Browser.
   - Executar o comando **npm test** para rodar os testes unitários.
 
+## Principais Comandos
+  - @nomeusuario mensagem: Envia uma mensagem pública direcionada a um usuário.
+  - #nomeusuario mensagem: Envia uma mensagem privada a um usuário.
+  - exit: Fazer logoff da sala de bate papo.
