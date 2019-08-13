@@ -23,8 +23,8 @@ module.exports = (httpServer) => {
                 socket.room = room;
                 socket.join(room);
 
-                socket.emit('onRegister', 'bot', { user: username, userslist: connectedUsers, message: ' Você entrou na sala ' + room + '.' });
-                socket.broadcast.to(room).emit('onRegister', 'bot', { user: username, userslist: connectedUsers, message: ' Entrou na sala ' + room + '.' });
+                socket.emit('onRegister', 'bot', { user: username, userslist: connectedUsers, message: 'Você entrou na sala ' + room + '.' });
+                socket.broadcast.to(room).emit('onRegister', 'bot', { user: username, userslist: connectedUsers, message: 'Entrou na sala ' + room + '.' });
             });
 
             socket.on('sendMessageAll', function(data) {

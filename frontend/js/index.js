@@ -62,6 +62,7 @@ $(function() {
                 alert('Não existe o apelido ' + sendTo + ' na sala.');
                 return;
             }
+            2
 
             socket.emit('sendMessageTo', message, sendTo);
 
