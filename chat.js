@@ -53,6 +53,11 @@ module.exports = (httpServer) => {
                 io.sockets.in(newroom).emit('switchRoomClient', 'bot', { message: socket.username + ' entrou na sala ' + newroom });
                 socket.room = newroom;
             });
+
+            socket.on('disconnect', function(user) {
+                socket.disconnect();
+                delete socketSessions[user];
+            });
         });
     };
 }

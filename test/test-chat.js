@@ -1,11 +1,12 @@
 const io = require('socket.io-client')
 const should = require('should')
+const wes_server = 'http://localhost:3030'
 
 describe("Testes Chat Service", function() {
 
     it('Teste Registro de Usuário', function(done) {
 
-        var clientSimulate = io.connect('http://localhost:3030');
+        var clientSimulate = io.connect(wes_server);
         let newuser = 'gustavo';
         let room = 'geral';
         let message = 'Você entrou na sala geral.';
@@ -27,7 +28,7 @@ describe("Testes Chat Service", function() {
 
     it('Teste Envio Mensagem a Todos da Sala', function(done) {
 
-        var clientSimulate = io.connect('http://localhost:3030');
+        var clientSimulate = io.connect(wes_server);
         let user = 'gustavo';
         let room = 'geral';
         let message = 'A mensagem de envio para todos, funciona?';
@@ -47,7 +48,7 @@ describe("Testes Chat Service", function() {
 
     it('Teste Envio Publico para um Usuário', function(done) {
 
-        var clientSimulate = io.connect('http://localhost:3030');
+        var clientSimulate = io.connect(wes_server);
         let user = 'gustavo';
         let room = 'geral';
         let message = 'Olá. Teste mensagem publica para um usuário.';
@@ -71,7 +72,7 @@ describe("Testes Chat Service", function() {
 
     it('Teste Envio Privado para um Usuário', function(done) {
 
-        var clientSimulate = io.connect('http://localhost:3030');
+        var clientSimulate = io.connect(wes_server);
         let user = 'gustavo';
         let room = 'geral';
         let message = 'Olá. Esta é uma mensagem privada.';
