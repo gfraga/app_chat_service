@@ -54,9 +54,13 @@ module.exports = (httpServer) => {
                 socket.room = newroom;
             });
 
-            socket.on('disconnect', function(user) {
-                socket.disconnect();
-                delete socketSessions[user];
+            socket.on('disconnectUser', function() {
+                
+                io.sockets.in(socket.room).emit('disconnectUserClient', 'bot', { message: socket.username + ' saiu do chat.'});
+                delete socketSessions[socket.username];
+                
+                let index = connectedUsers.indexOf(socket.username);
+                connectedUsers.splice(index, 1);                
             });
         });
     };
