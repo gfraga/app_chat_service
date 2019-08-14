@@ -25,4 +25,4 @@ No diretório *./frontend/* arquivo *index.html* foi criada a interface básica 
 ## Principais Comandos
   - @nomeusuario mensagem: Envia uma mensagem pública direcionada a um usuário.
   - #nomeusuario mensagem: Envia uma mensagem privada a um usuário.
-  - exit: Fazer logoff da sala de bate papo.
+  - /sair: Fazer logoff da sala de bate papo.
