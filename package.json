@@ -18,7 +18,7 @@
     },
     "homepage": "https://github.com/gfraga/app_chat_service#readme",
     "dependencies": {
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "mocha": "^6.2.0",
         "nodemon": "^1.19.1",
         "should": "^13.2.3",
